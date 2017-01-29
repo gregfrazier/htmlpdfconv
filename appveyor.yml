@@ -18,7 +18,7 @@ install:
 before_build:
   - cmd: cd C:\projects\htmlpdfconv
 build:
-  project: C:\projects\htmlpdfconvhtmlpdfconv.sln
+  project: C:\projects\htmlpdfconv\htmlpdfconv.sln
   # enable MSBuild parallel builds
   parallel: true
   # MSBuild verbosity level (quiet|minimal|normal|detailed)
