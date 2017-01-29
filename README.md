@@ -1,4 +1,4 @@
-# htmlpdfconv (also known as html2pdf)
+# htmlpdfconv (also known as html2pdf) [![Build status](https://ci.appveyor.com/api/projects/status/b9ei546kwt888rpr?svg=true)](https://ci.appveyor.com/project/gregfrazier/htmlpdfconv)
 Converts HTML to PDF (barely)
 
 This code is wretched and over 7 years old.
