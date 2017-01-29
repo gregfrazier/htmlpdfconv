@@ -1,0 +1,25 @@
+version: 1.0.{build}
+clone_depth: 1
+clone_folder: C:\projects\htmlpdfconv
+platform: 
+  - Win32
+  - x64
+# build Configuration, i.e. Debug, Release, etc.
+configuration:
+  - Debug
+#  - Release
+# scripts that are called at very beginning, before repo cloning
+init:
+  - cmd: msbuild /version
+# scripts that run after cloning repository
+install:
+  - cmd: cd C:\projects\htmlpdfconv
+# scripts to run before build
+before_build:
+  - cmd: cd C:\projects\htmlpdfconv
+build:
+  project: C:\projects\htmlpdfconvhtmlpdfconv.sln
+  # enable MSBuild parallel builds
+  parallel: true
+  # MSBuild verbosity level (quiet|minimal|normal|detailed)
+  verbosity: normal
