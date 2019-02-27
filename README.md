@@ -1,7 +1,7 @@
 # htmlpdfconv (also known as html2pdf) [![Build status](https://ci.appveyor.com/api/projects/status/b9ei546kwt888rpr?svg=true)](https://ci.appveyor.com/project/gregfrazier/htmlpdfconv)
 Converts HTML to PDF (barely)
 
-This code is wretched and over 7 years old.
+This code is wretched and over 10 years old (as of 2019)
 I'm making the internet a little dumber just having this crap here.
 
 Basically, it's completely handwritten in C (with some C++ mixed in, so it needs a cpp compiler) features a junky tokenizer, a DOM tree implemented as a linked-list (yeah, seriously) and css/attribs to those elements are also linked lists. I went ham on linked lists. I used tidyhtml lib to fix bad html tags, haru pdf lib for the pdf drawing, and CXImage for image processing (converts all images to JPEG).
@@ -19,5 +19,5 @@ What does it support?
 
 How to use:
 - Don't.
-- It doesn't compile very well anymore, I would avoid
-- Use it to learn how NOT to write code.
+- It doesn't compile very well anymore, I would avoid -> No longer true, compiles fine on AppVeyor
+- Use it to learn how NOT to write code. -> Still true, lol
